@@ -1,0 +1,132 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+:root {
+	--btn-color-light: #eee;
+	--btn-color-accent: #446df6;
+	--btn-border-color-light: #e9ecf5;
+	--text-color-dark: #141b41;
+	--text-color-semiDark: #72727e;
+	--text-color-light: #e9ecf5;
+	--text-color-lighter: #f7f8fd;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	font: inherit;
+}
+
+.page {
+	height: 100%;
+}
+
+.page__body {
+	height: 100%;
+	margin: 0;
+
+	font-family: "GT Eesti Pro Display", sans-serif;
+	font-size: 18px;
+	line-height: 140%;
+}
+
+.btn-transparent {
+	color: var(--btn-color-accent);
+	font-size: 16px;
+	padding: 14px 25px;
+	border-radius: 6px;
+	border: 1px solid var(--btn-border-color-light);
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.btn-blue {
+	color: var(--btn-color-light);
+	font-weight: 500;
+	padding: 18px 51px 17px;
+	border-radius: 6px;
+	background-color: var(--btn-color-accent);
+	border: 1px solid var(--btn-color-accent);
+	cursor: pointer;
+}
+
+.section-title {
+	color: var(--text-color-dark);
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 125%;
+}
+
+.section-title--small {
+	font-size: 32px;
+}
+
+.section-title--light {
+	color: var(--text-color-lighter);
+}
+
+/* ? HEADER */
+
+.main-menu__link {
+	color: var(--text-color-semiDark);
+}
+
+/* ? HERO */
+
+.hero__text {
+	color: var(--text-color-semiDark);
+	font-size: 24px;
+}
+
+/* ? STEPS  */
+
+.step__title {
+	color: var(--text-color-dark);
+	font-size: 24px;
+}
+
+.step__desc {
+	color: var(--text-color-semiDark);
+}
+
+/* ? EXCELLENTS */
+
+.excellents {
+	text-align: center;
+}
+
+.excellents__subtitle {
+	color: var(--text-color-semiDark);
+}
+
+/* ? APPS */
+
+.apps__subtitle {
+	color: var(--text-color-light);
+}
+
+/* ? REVIEW */
+
+.reviews__text {
+	color: var(--text-color-semiDark);
+}
+
+.reviews__author-name {
+	color: var(--text-color-dark);
+	font-size: 24px;
+}
+
+.reviews__author-position {
+	color: var(--text-color-semiDark);
+}
+
+/* ? FOOTER */
+
+.footer-menu__link {
+	color: var(--text-color-light);
+}
