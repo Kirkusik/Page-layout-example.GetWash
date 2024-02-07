@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="page">
+<html lang="ru" class="page">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,6 +8,46 @@
 
 		<link rel="stylesheet" href="./css/fonts.css" />
 		<link rel="stylesheet" href="./css/style.css" />
+
+		<!-- ! SEO, ALLY, LAYOUT -->
+		<style>
+			.visually-hidden {
+				position: absolute;
+
+				width: 1px;
+				height: 1px;
+				margin: -1px;
+				border: 0;
+				padding: 0;
+
+				white-space: nowrap;
+
+				clip-path: inset(100%);
+				clip: rect(0 0 0 0);
+				overflow: hidden;
+			}
+
+			.font-size {
+				position: absolute;
+
+				font-size: 0;
+			}
+			.display-none {
+				position: absolute;
+
+				display: none;
+			}
+			.visibility {
+				position: absolute;
+
+				visibility: hidden;
+			}
+			.opacity {
+				position: absolute;
+
+				opacity: 0;
+			}
+		</style>
 	</head>
 	<body class="page__body">
 		<header class="page__header page-header">
@@ -40,6 +80,15 @@
 		</header>
 
 		<main class="page__main">
+			<section class="test">
+				<!-- <h2 class="font-size">HIDE WITH font-size</h2> -->
+				<!-- <h2 class="display-none">HIDE WITH visibility</h2>
+				<h2 class="visibility">HIDE WITH visibility</h2> -->
+				<!-- <h2 class="opacity">HIDE WITH opacity</h2> -->
+
+				<h2 class="visually-hidden">HIDE WITH visually-hidden</h2>
+			</section>
+
 			<section class="hero">
 				<div class="container">
 					<h1 class="section-title hero__title">
@@ -210,10 +259,11 @@
 					<ul class="apps__list">
 						<li class="apps__item">
 							<a class="apps__link" href="#">
+								<span class="visually-hidden">app store</span>
 								<img
 									class="apps__icon"
 									src="./img/app-store.png"
-									alt="app store"
+									alt="appstore"
 									width="166"
 									height="54"
 								/>
@@ -221,10 +271,11 @@
 						</li>
 						<li class="apps__item">
 							<a class="apps__link" href="#">
+								<span class="visually-hidden">google play</span>
 								<img
 									class="apps__icon"
 									src="./img/g-play.png"
-									alt="google play"
+									alt="googleplay"
 									width="166"
 									height="54"
 								/>
@@ -246,6 +297,9 @@
 					<h2 class="section-title reviews__title">Отзывы о приложении</h2>
 
 					<article class="reviews__item reviews__item--active">
+						<h3 class="visually-hidden">
+							Отзыв о приложенни John Doe, Водитель
+						</h3>
 						<p class="reviews__text">
 							Таким образом консультация с широким активом влечет за собой
 							процесс внедрения и модернизации направлений прогрессивного
@@ -268,6 +322,9 @@
 					</article>
 
 					<article class="reviews__item">
+						<h3 class="visually-hidden">
+							Отзыв о приложенни John Doe, Водитель
+						</h3>
 						<p class="reviews__text">
 							Таким образом консультация с широким активом влечет за собой
 							процесс внедрения и модернизации направлений прогрессивного
@@ -290,6 +347,9 @@
 					</article>
 
 					<article class="reviews__item">
+						<h3 class="visually-hidden">
+							Отзыв о приложенни John Doe, Водитель
+						</h3>
 						<p class="reviews__text">
 							Таким образом консультация с широким активом влечет за собой
 							процесс внедрения и модернизации направлений прогрессивного
@@ -315,6 +375,7 @@
 						class="reviews__slider-btn reviews__slider-btn--next"
 						type="button"
 					>
+						<span class="visually-hidden">next slide</span>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="20"
@@ -336,6 +397,7 @@
 						class="reviews__slider-btn reviews__slider-btn--prev reviews__slider-btn--active"
 						type="button"
 					>
+						<span class="visually-hidden">prev slide</span>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="20"
